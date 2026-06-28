@@ -1,0 +1,13 @@
+{
+  "request_key": "design-md-smoke",
+  "current_stage": "design",
+  "status": "PASSED",
+  "updated_at": "2026-04-21T00:45:16",
+  "history": [
+    {
+      "stage": "design",
+      "pass": true,
+      "checked_at": "2026-04-21T00:45:16"
+    }
+  ]
+}

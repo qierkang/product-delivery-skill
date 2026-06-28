@@ -1,0 +1,65 @@
+name: ai-trade-platform
+project_name: AiTradePlatform
+brand_name: "AI 外贸获客平台（老王-AI外贸获客）"
+aliases:
+  - 老王-AI外贸获客
+  - AI SDR 外贸出海智能销售平台
+workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/ai-trade-platform
+docs_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/ai-trade-platform/docs
+database: postgresql
+cache: redis
+vector_store: qdrant
+docs_layout: consolidated
+
+# 架构决策记录见知识库：
+# /Users/qierkang/.obsidian/obsidian-wiki/wiki/synthesis/ai-trade-platform-架构决策记录-2026-06-03.md
+adr_ref: wiki/synthesis/ai-trade-platform-架构决策记录-2026-06-03.md
+
+tenant_model: saas_multi_tenant
+tenant_isolation: row_level_by_tenant_id
+qdrant_isolation: per_tenant_collection
+billing: dual_subscription_and_payg
+
+tech_stack:
+  management_backend:
+    - "Java 21 / Spring Boot 3.5.5 (trade-server, 基于 davinci fork)"
+    - "包名 com.aitrade.server"
+    - "PostgreSQL 15（主业务库 ai_trade，单库 + tenant_id 行级隔离）"
+    - "Redis（缓存 db1 + 任务队列）"
+    - "Flowable（人工审核 BPM，MVP 做 H-01/02/08/14）"
+    - "Quartz（Agent3/Agent8 定时调度，按租户 Job Group）"
+    - "MyBatis Plus"
+  ai_engine:
+    - "Python 3.11 / FastAPI 0.111 (ai-engine 独立无状态微服务)"
+    - "LangGraph 0.2（9 个 Agent 编排）"
+    - "Qdrant（向量库，每租户独立 Collection）"
+    - "Ollama BGE-M3（本地 Embedding 1024 维）"
+    - "DeepSeek V4 Flash（主推理）+ GLM-4-Flash（翻译/润色）"
+    - "禁止 GPT-4o / DeepL / 国外模型"
+  frontend:
+    - "Vue 3.5 (trade-front, 基于 davinci-front fork)"
+    - "Vben Admin 5 + Ant Design Vue 4.x"
+    - "pnpm Monorepo"
+
+ports:
+  trade_server: 7030
+  trade_front: 7031
+  ai_engine: 8030
+  qdrant: 6333
+  postgres: 5432
+  redis: 6379
+  ollama: 11434
+
+git_strategy: monorepo
+
+key_modules:
+  - aitrade-module-sdr
+  - aitrade-module-system
+  - aitrade-module-bpm
+  - ai-engine
+
+modes:
+  - docs
+  - dev
+  - db
+  - deploy

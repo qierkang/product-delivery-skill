@@ -1,0 +1,16 @@
+vendor_skills:
+  - name: ponytail
+    source: https://github.com/DietrichGebert/ponytail
+    license: MIT
+    upstream_commit: 45f7d2f83fb430a65fd512a98ad7b14d79e06636
+    imported_at: 2026-06-17
+    integration: internalized-method-reference
+    scope:
+      - dev-stage-code-simplicity
+      - review-stage-over-engineering-check
+      - deferred-shortcut-ledger
+    notes: >
+      Installed as global skills under ~/.agents/skills and internalized into
+      product-delivery-methods as a coding-efficiency quality gate. Do not make
+      product-delivery-skill depend on upstream hooks, slash commands, or
+      runtime mode files.

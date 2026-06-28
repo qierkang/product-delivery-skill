@@ -1,0 +1,44 @@
+name: haloo
+project_name: Haloo
+brand_name: "Haloo · 数字人社交平台"
+workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/haloo
+docs_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/haloo/docs
+database: postgresql
+cache: redis
+realtime: websocket
+docs_layout: consolidated
+
+tech_stack:
+  frontend:
+    - "Vue 3.5 (haloo-admin)"
+    - "Vben Admin 5"
+    - "Phaser 3 (haloo-venue H5)"
+    - "Socket.io-client 4.x"
+    - "Vite 6 / TypeScript 5 / pnpm"
+  backend:
+    - "Java 21 / Spring Boot 3.5 (haloo-server)"
+    - "PostgreSQL (主存储)"
+    - "Redis (在线玩家缓存 TTL=3600s)"
+    - "WebSocket / Socket.io Namespace /venue"
+
+ports:
+  server: 7010
+  admin: 7011
+  venue: 3100
+
+key_modules:
+  - haloo-server
+  - haloo-admin
+  - haloo-venue
+
+key_entry_points:
+  - haloo-venue/src/scenes/VenueScene.ts
+  - haloo-venue/src/network/SocketClient.ts
+  - haloo-venue/src/types/index.ts
+  - haloo-server/src/main/java/cn/iocoder/yudao/server/
+
+modes:
+  - docs
+  - dev
+  - db
+  - deploy

@@ -1,0 +1,13 @@
+{
+  "request_key": "sbti-red-fullrun-2026-04-11-v2",
+  "current_stage": "release",
+  "status": "PASSED",
+  "updated_at": "2026-04-11T21:55:44",
+  "history": [
+    {
+      "stage": "release",
+      "pass": true,
+      "checked_at": "2026-04-11T21:55:44"
+    }
+  ]
+}

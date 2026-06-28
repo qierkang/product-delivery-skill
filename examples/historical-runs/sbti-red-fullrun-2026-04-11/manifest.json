@@ -1,0 +1,13 @@
+{
+  "request_key": "sbti-red-fullrun-2026-04-11",
+  "title": "SBTI RED 全量陪跑验证",
+  "owner": "xyqierkang@gmail（claude+codex）",
+  "workflow": "new-feature",
+  "platforms": [
+    "web"
+  ],
+  "priority": "P1",
+  "status": "in_progress",
+  "created_at": "2026-04-11T21:52:19",
+  "updated_at": "2026-04-11T21:52:19"
+}

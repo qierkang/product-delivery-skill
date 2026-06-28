@@ -1,0 +1,15 @@
+{
+  "request_key": "beiweite-phase1-menu-sql-20260527",
+  "current_stage": "release",
+  "status": "PASSED",
+  "updated_at": "2026-05-27T12:00:00",
+  "history": [
+    { "stage": "requirement", "pass": true, "checked_at": "2026-05-27T00:00:00" },
+    { "stage": "design",      "pass": true, "checked_at": "2026-05-27T00:00:00" },
+    { "stage": "dev",         "pass": true, "checked_at": "2026-05-27T00:00:00" },
+    { "stage": "review",      "pass": true, "checked_at": "2026-05-27T00:00:00" },
+    { "stage": "smoke",       "pass": true, "checked_at": "2026-05-27T12:00:00" },
+    { "stage": "qa",          "pass": true, "checked_at": "2026-05-27T12:00:00" },
+    { "stage": "release",     "pass": true, "checked_at": "2026-05-27T12:00:00" }
+  ]
+}

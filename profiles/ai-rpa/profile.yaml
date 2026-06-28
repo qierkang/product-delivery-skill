@@ -1,0 +1,47 @@
+name: ai-rpa
+project_name: AI+RPA 自动化平台
+brand_name: "AI+RPA · 制造业智能调度平台"
+workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace
+requests_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/skills/product-delivery-skill/workspace/requests
+
+# 技术栈
+tech_stack:
+  decision_engine: python-fastapi
+  rpa_tool: yingdao-rpa
+  mock_system: html-vanilla-js
+  log_storage: csv-local
+
+# 模式（AI+RPA 项目不需要 db / frontend deploy）
+modes:
+  - docs
+  - dev
+
+# 交付物裁剪：AI+RPA 项目跳过纯前端/UI 类产物
+skip_artifacts:
+  - UI交互设计规范.md
+  - UI验收报告.md
+  - 前端关键流程覆盖清单.md
+  - 页面接口验收总表.md
+  - DESIGN.md
+
+# 额外产物（AI+RPA 特有）
+extra_artifacts:
+  - scene.yaml              # 场景配置文件
+  - mock-system/            # Mock 系统代码目录
+  - rpa-scripts/            # 影刀流程文件目录
+  - decision-engine/        # 决策引擎代码目录
+  - demo-record.md          # Demo 录屏链接 + 日志截图
+
+# Demo 阶段验收标准
+demo_acceptance:
+  min_dispatches: 10
+  min_success_rate: 0.80
+  required_evidence:
+    - demo_recording_or_screenshots
+    - dispatch_log_csv
+    - decision_engine_response_log
+
+# 默认执行策略
+default_strategy:
+  push_mode: demo_first    # demo → production 两阶段
+  doc_author: "qierkang（claude+codex）"

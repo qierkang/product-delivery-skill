@@ -1,0 +1,23 @@
+{
+  "request_key": "sbti-red-mvp",
+  "current_stage": "design",
+  "status": "PASSED",
+  "updated_at": "2026-04-21T00:43:09",
+  "history": [
+    {
+      "stage": "qa",
+      "pass": true,
+      "checked_at": "2026-04-12T01:33:31"
+    },
+    {
+      "stage": "design",
+      "pass": true,
+      "checked_at": "2026-04-12T01:34:41"
+    },
+    {
+      "stage": "design",
+      "pass": true,
+      "checked_at": "2026-04-21T00:43:09"
+    }
+  ]
+}

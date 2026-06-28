@@ -1,0 +1,18 @@
+{
+  "request_key": "beiweite-phase1-menu-sql-20260527",
+  "title": "贝威特估价系统 Phase 1 — 菜单注册 + DB 修复",
+  "owner": "qierkang（claude+codex）",
+  "workflow": "new-feature",
+  "platforms": ["web", "backend"],
+  "priority": "P0",
+  "status": "in_progress",
+  "created_at": "2026-05-27T00:00:00",
+  "updated_at": "2026-05-27T00:00:00",
+  "skip_artifacts": [
+    "UI交互设计规范.md",
+    "UI验收报告.md",
+    "前端关键流程覆盖清单.md",
+    "页面接口验收总表.md",
+    "DESIGN.md"
+  ]
+}

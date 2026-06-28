@@ -1,0 +1,42 @@
+name: worldcup-predictor
+project_name: WorldCupPredictor
+brand_name: "世界杯 2026 · 胜平负 + 大小球预测仪表盘"
+workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/worldcup-predictor
+docs_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/worldcup-predictor/docs
+database: "none (file-based JSON snapshots: results.json / elo-calibrated.json)"
+cache: "none (in-process)"
+realtime: "agent web tools (WebSearch/WebFetch) for live fixtures"
+docs_layout: consolidated
+
+tech_stack:
+  prediction_engine:
+    - "Node.js >=20 ESM (.mjs), no third-party deps"
+    - "Elo rating + Dixon-Coles bivariate Poisson + Monte Carlo"
+    - "改编自 Hicruben/world-cup-2026-prediction-model (MIT)"
+    - "Skill 外壳 + sha256 输入审计 改编自 qqyule/worldcup-predictor-skill (MIT)"
+  demo_dashboard:
+    - "前端原型由设计 AI(OpenDesign) 产出，后续接入"
+    - "深色科技风 OKLCH token / Space Grotesk + Inter + JetBrains Mono"
+    - "数据契约对齐 predict-match.mjs 输出 JSON"
+
+ports:
+  demo: 5173
+
+key_modules:
+  - prediction-engine (scripts/elo.mjs, derive.mjs, predict-match.mjs, backtest.mjs)
+  - demo-dashboard (今日赛事 / 单场详情 / 冠军榜 / 校准页)
+
+key_entry_points:
+  - scripts/predict-match.mjs
+  - scripts/elo.mjs
+  - references/methodology.md
+  - demo/design-brief.md
+
+scope_boundaries:
+  - 仅统计概率，不投注建议；强制免责 + 18+
+  - 禁玄学/气运因子，禁博彩赔率反推
+  - 大小球与胜平负必须出自同一张 DC 双泊松网格
+
+modes:
+  - docs
+  - dev

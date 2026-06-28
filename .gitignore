@@ -1,0 +1,16 @@
+# 当前任务运行目录不纳入仓库，避免污染 token 与误读
+workspace/requests/*
+!workspace/requests/.gitkeep
+
+# 历史运行存档允许纳入仓库（见 examples/historical-runs/）
+# 如需新增历史归档，请走 examples/historical-runs/<run-key>/
+
+# 本地符号链接，跨机不可移植（指向 ~/.graphify/outputs/...）
+graphify-out
+
+# 常见噪声
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+node_modules/

@@ -1,0 +1,15 @@
+{
+  "request_key": "sbti-red-mvp",
+  "title": "SBTI RED 免费开放版 + 详细报告解锁版",
+  "owner": "qierkang",
+  "workflow": "new-feature",
+  "platforms": [
+    "manage",
+    "h5",
+    "web"
+  ],
+  "priority": "P1",
+  "status": "in_progress",
+  "created_at": "2026-04-11",
+  "updated_at": "2026-04-11"
+}

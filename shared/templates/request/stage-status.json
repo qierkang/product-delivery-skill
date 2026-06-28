@@ -1,0 +1,19 @@
+{
+  "request_key": "",
+  "current_stage": "requirement",
+  "status": "IN_PROGRESS",
+  "updated_at": "",
+  "stages": {
+    "requirement": "todo",
+    "design": "todo",
+    "task_breakdown": "todo",
+    "development": "todo",
+    "self_test": "todo",
+    "code_review": "todo",
+    "smoke_test": "todo",
+    "qa_acceptance": "todo",
+    "ui_acceptance": "todo",
+    "product_acceptance": "todo",
+    "release": "todo"
+  }
+}
