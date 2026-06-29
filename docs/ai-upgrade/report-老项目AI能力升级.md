@@ -42,7 +42,7 @@
 
 | locale | path | sha256 |
 |---|---|---|
-| `default` | `assets/social-preview.png` | `e8b035f361d02f3a7e9ed579e75430f7fe348ca9a9f013d854b7e50980418fc2` |
+| `default` | `assets/social-preview.png` | `01c1f3ad01fa8c9ba79bf0f206d358e9b8063f2f51916d92e3921ccc34b45ac4` |
 | `zh-CN` | `assets/platform/architecture/zh-CN/product-delivery-skill-architecture.png` | `6c0ef1a628c64f424b8ce58b2605bd580072c5221ca3b0bdfb73ea6f40c87e5f` |
 | `en` | `assets/platform/architecture/en/product-delivery-skill-architecture.png` | `690feaa87c34e42910b5ff8976d87335c1eab76b26bcb0706ffa16607e30d04d` |
 

@@ -33,6 +33,8 @@
 [![Bash](https://img.shields.io/badge/Bash-4.0+-4EAA25.svg?style=for-the-badge&logo=gnubash&logoColor=white)](install/)
 [![Template](https://img.shields.io/badge/templates-21_artifacts-orange.svg?style=for-the-badge)](shared/templates/)
 [![Compatible](https://img.shields.io/badge/Compatible-Claude_Code_%7C_Codex_%7C_Cursor-blue.svg?style=for-the-badge)](#快速开始)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/qierkang/product-delivery-skill/pulls)
+[![Stars](https://img.shields.io/github/stars/qierkang/product-delivery-skill?style=for-the-badge&logo=github&label=Stars)](https://github.com/qierkang/product-delivery-skill/stargazers)
 
 </div>
 
@@ -392,13 +394,13 @@ python3 shared/scripts/readme-gate.py --readme README.md
 
 ## 项目状态
 
-- 当前状态：`本地验证通过，公开发布前整理中`
-- 版本阶段：`v0.2.0 · Local Validated`
+- 当前状态：`已公开发布到 GitHub，本地验证通过`
+- 版本阶段：`v0.2.0 · Public GitHub`
 - 维护方式：随本地 AI 交付流程持续迭代
 - 兼容范围：`macOS / Linux · Python 3 · Bash · Claude Code / Codex / Cursor / OpenClaw`
 - 托管状态：公开 GitHub 仓库 `https://github.com/qierkang/product-delivery-skill`
-- GitHub 状态：尚未公开提交，需人工检查后再发布
-- 已知风险：历史 Profile 和 examples 中仍存在本机绝对路径，公开发布前需要脱敏；`profiles/ai-trade-platform/profile.yaml` 指向的 workspace 当前不可达
+- GitHub 状态：`master` 已推送到公开仓库
+- 已知风险：示例 Profile 使用占位 workspace 路径，实际项目执行前需要替换为真实路径
 
 ---
 
@@ -514,9 +516,9 @@ python3 shared/scripts/readme-gate.py --readme README.md
 
 ## Star History · Star 历史
 
-如果这个 skill 对你有帮助，欢迎在公开仓库发布后点亮一颗 Star ⭐ —— If this skill helps you, please consider giving it a star after the public GitHub repository is published.
+如果这个 skill 对你有帮助，欢迎点亮一颗 Star ⭐ —— If this skill helps you, please consider giving it a star.
 
-当前项目尚未公开提交到 GitHub，因此不展示 Star History 图表，避免伪造公开仓库数据。
+[![Star History Chart](https://api.star-history.com/svg?repos=qierkang/product-delivery-skill&type=Date)](https://www.star-history.com/#qierkang/product-delivery-skill&Date)
 
 ---
 
