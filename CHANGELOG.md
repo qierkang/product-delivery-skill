@@ -13,6 +13,6 @@ All notable public changes to this project are documented here.
 ### Changed
 
 - Expanded the root README to satisfy the open-source documentation gate.
-- Replaced local workspace paths and internal remote URLs with public-safe placeholders before GitHub publication.
+- Replaced local workspace paths and internal remote URLs with public-safe sample paths before GitHub publication.
 
 Detailed historical changes remain in `governance/CHANGELOG.md`.

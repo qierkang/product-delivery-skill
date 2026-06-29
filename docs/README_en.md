@@ -224,7 +224,7 @@ python3 shared/scripts/stage-gate.py \
 - `shared/scripts/init-request.py` initializes a request workspace.
 - `shared/scripts/stage-gate.py` runs one stage gate or the full delivery gate summary.
 - `shared/scripts/project-ready-check.py` checks project-level release readiness.
-- `shared/scripts/readme-gate.py` validates README sections, placeholders, and open-source readiness.
+- `shared/scripts/readme-gate.py` validates README sections, template residue, and open-source readiness.
 - `shared/scripts/health-check.py` validates this skill package: structure, templates, profiles, and governance records.
 
 ### Profiles And Governance
@@ -245,7 +245,7 @@ python3 shared/scripts/stage-gate.py \
 | Templates | Markdown / JSON / Shell | Standard artifacts for requirements, design, QA, acceptance, and release. |
 | Profiles | YAML / Markdown | Project configuration and environment parameters. |
 | Visual assets | `image_gen` + PNG | README architecture diagrams and localized image assets. |
-| README validation | `shared/scripts/readme-gate.py` / `~/.claude/scripts/readme-gate.py` | Structure, placeholders, and publication-quality checks. |
+| README validation | `shared/scripts/readme-gate.py` / `~/.claude/scripts/readme-gate.py` | Structure, template residue, and publication-quality checks. |
 
 ---
 
@@ -399,7 +399,7 @@ python3 shared/scripts/readme-gate.py --readme README.md
 - Maintenance mode: Iterated with the local AI delivery workflow.
 - Compatibility: `macOS / Linux · Python 3 · Bash · Claude Code / Codex / Cursor / OpenClaw`
 - Hosting: Public GitHub repository at `https://github.com/qierkang/product-delivery-skill`
-- Known risk: Example profiles use placeholder workspace paths; replace them before running project-specific delivery work.
+- Known risk: Example profiles use sample workspace paths; replace them before running project-specific delivery work.
 
 ---
 

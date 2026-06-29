@@ -28,7 +28,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.2.0-informational.svg?style=for-the-badge)](#版本说明)
-[![Status](https://img.shields.io/badge/status-local--validated-success.svg?style=for-the-badge)](#项目状态)
+[![Status](https://img.shields.io/badge/status-public--github-success.svg?style=for-the-badge)](#项目状态)
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](shared/scripts/)
 [![Bash](https://img.shields.io/badge/Bash-4.0+-4EAA25.svg?style=for-the-badge&logo=gnubash&logoColor=white)](install/)
 [![Template](https://img.shields.io/badge/templates-21_artifacts-orange.svg?style=for-the-badge)](shared/templates/)
@@ -400,7 +400,7 @@ python3 shared/scripts/readme-gate.py --readme README.md
 - 兼容范围：`macOS / Linux · Python 3 · Bash · Claude Code / Codex / Cursor / OpenClaw`
 - 托管状态：公开 GitHub 仓库 `https://github.com/qierkang/product-delivery-skill`
 - GitHub 状态：`master` 已推送到公开仓库
-- 已知风险：示例 Profile 使用占位 workspace 路径，实际项目执行前需要替换为真实路径
+- 已知风险：示例 Profile 使用样例 workspace 路径，实际项目执行前需要替换为真实路径
 
 ---
 
@@ -453,7 +453,7 @@ python3 shared/scripts/readme-gate.py --readme README.md
 
 ## 贡献与协作
 
-欢迎提交 Issue、功能建议和文档改进。当前仓库仍处于公开发布前整理阶段，贡献前建议先跑完整本地验证。
+欢迎提交 Issue、功能建议和文档改进。贡献前建议先跑完整本地验证。
 
 **如何参与：**
 
@@ -497,7 +497,7 @@ python3 shared/scripts/readme-gate.py --readme README.md
 
 | 版本 | 状态 | 变更摘要 |
 |------|------|---------|
-| `v0.2.0` | 当前 | 生产级整改、独立 GitLab 托管、主入口瘦身、Profile 索引、健康检查、README 工作流 |
+| `v0.2.0` | 当前 | 生产级整改、独立 Git 托管、主入口瘦身、Profile 索引、健康检查、README 工作流 |
 | `2026-04-21` | 归档 | 新增开源 README 参考、工作流和 `readme-gate.py` |
 | `2026-04-12` | 归档 | 新增 UI 设计兜底规则和 Claude 入口约束 |
 | `2026-04-11` | 归档 | 初始化 skill 骨架和 `sbti-red` 试点 profile |

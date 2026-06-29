@@ -65,11 +65,11 @@
 
 ## Risks
 
-- Profile files use placeholder workspace paths so they can be copied into a real project without exposing local machine paths.
+- Profile files use sample workspace paths so they can be copied into a real project without exposing local machine paths.
 - Historical examples are retained as reference evidence and should be adapted before being reused in another project.
 
 ## Next Recommendations
 
 - Review the new social preview and Chinese/English architecture images visually before publishing.
-- Replace placeholder profile paths with real project paths before running project-specific delivery work.
+- Replace sample profile paths with real project paths before running project-specific delivery work.
 - Commit only after manual inspection of the generated assets and README language switch.
