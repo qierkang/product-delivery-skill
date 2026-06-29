@@ -1,4 +1,4 @@
-# Decision 0004 — product-delivery-skill 以独立 git 仓库托管在 gitlab
+# Decision 0004 — product-delivery-skill 以独立 git 仓库托管
 
 - **状态**：accepted
 - **日期**：2026-06-29
@@ -9,12 +9,12 @@
 dec-0003 暂缓决策的本意是不向 codex-workspace 主仓做 200+ 文件首次入库。本次明确：
 
 - skill 包从语义上就**不属于** codex-workspace 子树，它是可分发、可复刻、独立演化的技能包
-- 已有独立 gitlab 仓库地址：`http://gitlab.zhgcraft.com/skills/product-delivery-skill.git`
+- 已有独立 Git 远端用于内部托管
 - 寄生在 codex-workspace 内做 worktree 是工作便利，**不是托管目标**
 
 ## 决策
 
-**product-delivery-skill 在本目录内以独立 git 仓库托管**，远程为 `http://gitlab.zhgcraft.com/skills/product-delivery-skill.git`，主分支为 `master`。
+**product-delivery-skill 在本目录内以独立 git 仓库托管**，内部远端保留为 `origin`，公开分发远端使用 GitHub，主分支为 `master`。
 
 ## 实施口径
 
@@ -32,11 +32,11 @@ dec-0003 暂缓决策的本意是不向 codex-workspace 主仓做 200+ 文件首
 
 ## 重新评估触发
 
-- 改为多人协作且需细粒度权限控制 → 评估 GitLab group 权限拆分
+- 改为多人协作且需细粒度权限控制 → 评估托管平台权限拆分
 - skill 包外部化到独立 namespace → 评估迁出 `ai-workspace/skills/` 物理位置
-- 出现破坏性变更需要回滚 → 启用 GitLab tag + release
+- 出现破坏性变更需要回滚 → 启用 tag + release
 
 ## 关联记录
 
-- `CHANGELOG.md` v0.2.0 顶部追加"首次入库 gitlab"条目
+- `CHANGELOG.md` v0.2.0 顶部追加"首次独立入库"条目
 - `governance/updates/2026-06-29-initial-gitlab-push.md` 记录首次 push 实际结果

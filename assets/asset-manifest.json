@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "project": "product-delivery-skill",
+  "required": [
+    {
+      "image_type": "architecture",
+      "locale": "zh-CN",
+      "path": "assets/platform/architecture/zh-CN/product-delivery-skill-architecture.png",
+      "prompt_file": null,
+      "sha256": "6c0ef1a628c64f424b8ce58b2605bd580072c5221ca3b0bdfb73ea6f40c87e5f",
+      "generated_at": "2026-06-29T15:49:14+00:00",
+      "generated_by": "image_gen"
+    },
+    {
+      "image_type": "architecture",
+      "locale": "en",
+      "path": "assets/platform/architecture/en/product-delivery-skill-architecture.png",
+      "prompt_file": null,
+      "sha256": "690feaa87c34e42910b5ff8976d87335c1eab76b26bcb0706ffa16607e30d04d",
+      "generated_at": "2026-06-29T15:49:14+00:00",
+      "generated_by": "image_gen"
+    }
+  ],
+  "extra": [
+    {
+      "image_type": "extra",
+      "path": "assets/social-preview.png",
+      "prompt_file": null,
+      "sha256": "e8b035f361d02f3a7e9ed579e75430f7fe348ca9a9f013d854b7e50980418fc2",
+      "generated_at": "2026-06-29T16:17:17+00:00",
+      "generated_by": "image_gen"
+    }
+  ],
+  "generated_at": "2026-06-29T15:49:14+00:00"
+}

@@ -5,7 +5,7 @@
 ## 1. 结构与入口
 
 - [ ] 根 `SKILL.md` ≤ 50 行，只路由不堆规则
-- [ ] 根 `README.md` ≤ 180 行，长文档全部下沉到 `docs/`
+- [ ] 根 `README.md` 存在，并通过 README gate；开源展示内容不再使用固定行数上限
 - [ ] `skills/product-delivery-skill/SKILL.md` ≤ 120 行，必读 ≤ 3 项 + 按需带触发条件
 - [ ] `skills/product-delivery-methods/SKILL.md` 存在且能从主入口路由到
 - [ ] `START-HERE.md` 指向当前真实文件，无 404 链接

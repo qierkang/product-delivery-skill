@@ -6,7 +6,7 @@
 
 ## 变更
 
-- 将 `DietrichGebert/ponytail` 安装为全局 skill，路径为 `/Users/qierkang/.agents/skills/ponytail*`
+- 将 `DietrichGebert/ponytail` 安装为全局 skill，路径为 `<agent-skills-dir>/ponytail*`
 - 新增 `governance/vendor-skills.yaml`，记录外部 skill 来源、许可证、commit 与集成方式
 - 新增 `skills/product-delivery-methods/references/code-simplicity.md`
 - 更新根入口与主入口，在 `Dev` / `Review` 阶段接入编码效率与复杂度门禁

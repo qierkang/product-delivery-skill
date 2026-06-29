@@ -4,15 +4,16 @@ brand_name: "AI 外贸获客平台（老王-AI外贸获客）"
 aliases:
   - 老王-AI外贸获客
   - AI SDR 外贸出海智能销售平台
-workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/ai-trade-platform
-docs_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/ai-trade-platform/docs
+workspace_dir: <path-to-your-ai-trade-platform>
+docs_dir: <path-to-your-ai-trade-platform>/docs
 database: postgresql
 cache: redis
 vector_store: qdrant
 docs_layout: consolidated
 
 # 架构决策记录见知识库：
-# /Users/qierkang/.obsidian/obsidian-wiki/wiki/synthesis/ai-trade-platform-架构决策记录-2026-06-03.md
+# Optional local knowledge-base reference:
+# wiki/synthesis/ai-trade-platform-架构决策记录-2026-06-03.md
 adr_ref: wiki/synthesis/ai-trade-platform-架构决策记录-2026-06-03.md
 
 tenant_model: saas_multi_tenant

@@ -1,8 +1,8 @@
 name: worldcup-predictor
 project_name: WorldCupPredictor
 brand_name: "世界杯 2026 · 胜平负 + 大小球预测仪表盘"
-workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/worldcup-predictor
-docs_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/worldcup-predictor/docs
+workspace_dir: <path-to-your-worldcup-predictor-workspace>
+docs_dir: <path-to-your-worldcup-predictor-workspace>/docs
 database: "none (file-based JSON snapshots: results.json / elo-calibrated.json)"
 cache: "none (in-process)"
 realtime: "agent web tools (WebSearch/WebFetch) for live fixtures"

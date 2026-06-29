@@ -1,8 +1,8 @@
 name: ai-rpa
 project_name: AI+RPA 自动化平台
 brand_name: "AI+RPA · 制造业智能调度平台"
-workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace
-requests_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/skills/product-delivery-skill/workspace/requests
+workspace_dir: <path-to-your-ai-rpa-workspace>
+requests_dir: ./workspace/requests
 
 # 技术栈
 tech_stack:

@@ -1,8 +1,8 @@
 # CHANGELOG
 
-## 2026-06-29 — v0.2.0 首次入库 gitlab
+## 2026-06-29 — v0.2.0 首次独立入库
 
-- **首次以独立 git 仓库托管**：`http://gitlab.zhgcraft.com/skills/product-delivery-skill.git`（master 分支）
+- **首次以独立 git 仓库托管**：内部远端完成首次入库，后续公开分发以 GitHub 仓库为准
 - 新增决策 [dec-0004](./decisions/dec-0004-standalone-gitlab-repo.md)，[dec-0003](./decisions/dec-0003-skill-repo-untracked-in-codex-workspace.md) 标记为 superseded
 - 本次入库范围由 `.gitignore` 收口：忽略 `workspace/requests/*`、`graphify-out/`、`__pycache__`、`.DS_Store`、`node_modules/`、`.venv/` 等
 

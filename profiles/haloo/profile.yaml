@@ -1,8 +1,8 @@
 name: haloo
 project_name: Haloo
 brand_name: "Haloo · 数字人社交平台"
-workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/haloo
-docs_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/haloo/docs
+workspace_dir: <path-to-your-haloo-workspace>
+docs_dir: <path-to-your-haloo-workspace>/docs
 database: postgresql
 cache: redis
 realtime: websocket

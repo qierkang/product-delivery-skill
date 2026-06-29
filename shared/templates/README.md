@@ -4,7 +4,7 @@
 
 ## 模板来源
 
-- 主来源：`/Users/qierkang/.codex/codex-workspace/picasso-dev-skill/shared/templates`
+- 主来源：`picasso-dev-skill/shared/templates`
 - 策略：保留其“全链路交付 + 阶段 Gate + 证据放行”能力，去除 Picasso 业务耦合字段，沉淀为通用版本。
 - UI 设计部分允许优先协同外部 `ui-ux-pro-max`，若不可用则回退到 `shared/references/design-baseline.md`。
 - 若项目存在 `DESIGN.md`，它是页面风格、组件语气和视觉边界的第一设计输入；`UI交互设计规范.md` 负责把它展开到页面与交互层。

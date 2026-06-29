@@ -129,7 +129,7 @@ cp ~/generated_images/${TS}-${PROJECT}-backend-arch.png docs/技术/
 ### Step 4 — 更新知识库
 
 在共享知识库创建项目初始化条目：
-- 路径：`/Users/qierkang/.obsidian/obsidian-wiki/wiki/synthesis/{项目名}-项目初始化-{YYYY-MM-DD}.md`
+- 路径：`<knowledge-base>/wiki/synthesis/{项目名}-项目初始化-{YYYY-MM-DD}.md`
 - 参考 `haloo-项目初始化-2026-05-30.md` 的格式
 
 ### Step 5 — 进入需求阶段

@@ -4,8 +4,8 @@
 
 ## 1. 本次模拟范围
 
-- 使用技能包：`/Users/qierkang/.codex/codex-workspace/product-delivery-skill`
-- 验证对象项目：`/Users/qierkang/.codex/codex-workspace/sbti-red`
+- 使用技能包：`<path-to-product-delivery-skill>`
+- 验证对象项目：`<path-to-sbti-red>`
 - 模拟链路：
   1. `doctor` 四能力检查
   2. `init-request` 从零建单
@@ -33,12 +33,12 @@
 ### 2.3 项目级检查
 
 - 命令：
-  - `python3 shared/scripts/project-ready-check.py --project-dir /Users/qierkang/.codex/codex-workspace/sbti-red`
+  - `python3 shared/scripts/project-ready-check.py --project-dir <path-to-sbti-red>`
 - 结果：PASS（missing/issues 均为空）
 
 ### 2.4 部署与可访问性
 
-- `bash /Users/qierkang/.codex/codex-workspace/sbti-red/deploy.sh`：成功
+- `bash <path-to-sbti-red>/deploy.sh`：成功
 - 运行状态：
   - `sbti-red-web`：Up
   - `sbti-red-api`：Up

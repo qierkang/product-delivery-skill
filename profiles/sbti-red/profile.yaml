@@ -1,8 +1,8 @@
 name: sbti-red
 project_name: SBTI RED
 brand_name: "SBTI RED · 红镜人格实验室"
-workspace_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/ai-projects/solutionsWorkSpace/sbti-red
-requests_dir: /Users/qierkang/.codex/codex-workspace/ai-workspace/skills/product-delivery-skill/workspace/requests
+workspace_dir: <path-to-your-sbti-red-workspace>
+requests_dir: ./workspace/requests
 database: mysql
 cache: redis
 modes:
@@ -10,4 +10,3 @@ modes:
   - dev
   - db
   - deploy
-

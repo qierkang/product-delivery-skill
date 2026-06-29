@@ -59,7 +59,7 @@ def section_structure(rep: Report) -> None:
     sec = "1.structure"
     files = {
         "root SKILL.md ≤ 50": (ROOT / "SKILL.md", 50),
-        "root README.md ≤ 180": (ROOT / "README.md", 180),
+        "root README.md exists": (ROOT / "README.md", None),
         "main SKILL ≤ 120": (ROOT / "skills/product-delivery-skill/SKILL.md", 120),
         "methods SKILL exists": (ROOT / "skills/product-delivery-methods/SKILL.md", None),
         "START-HERE exists": (ROOT / "START-HERE.md", None),
@@ -305,7 +305,17 @@ def section_links(rep: Report) -> None:
             m = re.search(r"workspace_dir:\s*(\S+)", text)
             if not m:
                 continue
-            target = Path(m.group(1))
+            raw_target = m.group(1).strip().strip('"').strip("'")
+            if (
+                raw_target.startswith("<")
+                or raw_target.startswith("${")
+                or raw_target.startswith("$")
+                or raw_target.startswith("./")
+            ):
+                rep.add(sec, f"profile {p.name} workspace placeholder", "PASS",
+                        raw_target)
+                continue
+            target = Path(raw_target)
             if target.exists():
                 rep.add(sec, f"profile {p.name} workspace reachable", "PASS")
             else:
